@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<style>
+	  .container button 
+	   { 
+           position: relative;
+           top: -180px;
+		   }
+		   .left{
+		   	left:-1500px;
+		   }
+		   .menu{
+	width:100%;
+	background:#142b47;
+	overflow:auto;
+}
+.menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	line-height:60px;
+}
+.menu li{
+	float:left;
+}
+.menu ul li a{
+	background:#142b47;
+	text-decoration:none;
+	width:130px;
+	display:block;
+	text-align:center;
+	color:#f2f2f2;
+	font-size:18px;
+	font-family:sans-serif;
+	letter-spacing:0.5px;
+}
+.menu li a:hover{
+	color:#fff;
+	opticity:0.5;
+	font-size:19px;
+	
+}
+.search-form{
+	margin-top:15px;
+	float:right;
+	margin-right:100px;
+}
+input[type=text]{
+	padding:7px;
+	border:none;
+	font-size:16px;
+	font-family:sans-serif;
+	
+}
+button{
+	float:right;
+	background:orange;
+	color:white;
+	border-radius:0 5px 5px 0;
+	cursor:pointer;
+	position:relative;
+	padding:7px;
+	font-family:sans-serif;
+	border:none;
+	font-size:16px;
+	
+}
+footer{
+	border: dotted blue;
+	padding:10px 10px;
+	font-size:20px;
+	background-color:beige;
+}
+h1{
+        font-size:75px;
+		padding:25px;
+	background-size:contain;
+	color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+ 
+   
+	</style>
+</head>
+<body>
+  <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="file:///C:/Users/DELL/Desktop/java%20script/newpage.html#contact">Category</a></li>
+		<li><a href="#">Feedback</a></li>
+		<li><a href="file:///C:/Users/DELL/Desktop/java%20script/about.html#">About</a></li>
+		<li><a href="#contact">Contact</a></li>
+			 
+      </ul>
+	    <form class="search-form">
+	      <input type="text" placrholder="Search">
+	        <button>Search</button>
+	    </form>
+   </nav>
+     <div class="container">
+<img class="mySlides" src="https://images.pexels.com/photos/276722/pexels-photo-276722.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"style="width:50%">
+<img class="mySlides" src="https://images.pexels.com/photos/270571/pexels-photo-270571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"style="width:50%" >
+<img class="mySlides" src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1477037448000/photosp/a551e264-7386-4288-8844-f33a2d0812f7/stock-photo-sunlight-sitting-window-colorful-library-headphones-studying-college-students-library-books-a551e264-7386-4288-8844-f33a2d0812f7.jpg"style="width:50%">
+<img class="mySlides" src="https://images.pexels.com/photos/256421/pexels-photo-256421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"style="width:50%">
+
+<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<a id="contact">
+	   <footer>
+         <p>Contact us-memonyasin3@gmail.com</p>
+          <h4>Powerd by-Web</h4> 
+ 
+     </footer>
+	 </a>
+   
+
+
+</body>
+</html>
