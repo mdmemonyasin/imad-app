@@ -25,7 +25,7 @@
 }
 .menu li a:hover{
 	color:#fff;
-	opticity:0.5;
+	opacity:0.5;
 	font-size:19px;
 	
 }
@@ -65,7 +65,6 @@ footer{
 	border: dotted blue;
 	padding:10px 10px;
 	font-size:20px;
-	font-type:bold;
 	background-color:beige;
 }
 h1{
