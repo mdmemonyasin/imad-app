@@ -18,7 +18,22 @@ app.get("/thirdpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'thirdpage.html'));
     
 });
-
+app.get("/fourthpage",function(req,res){
+     res.sendFile(path.join(__dirname, 'ui', 'fourthpage.html'));
+    
+});
+app.get("/fifthpage",function(req,res){
+     res.sendFile(path.join(__dirname, 'ui', 'fifthpage.html'));
+    
+});
+app.get("/sixpage",function(req,res){
+     res.sendFile(path.join(__dirname, 'ui', 'sixpage.html'));
+    
+});
+app.get("/sevenpage",function(req,res){
+     res.sendFile(path.join(__dirname, 'ui', 'sevenpage.html'));
+    
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
