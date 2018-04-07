@@ -50,7 +50,7 @@ footer{
 }
 .menu li a:hover{
 	color:#fff;
-	opticity:0.5;
+	opacity:0.5;
 	font-size:19px;
 	
 }
