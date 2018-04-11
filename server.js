@@ -11,6 +11,9 @@ app.get('/', function (req, res) {
 app.get("/newpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'newpage.html'));
 }); 
+app.get("/contact",function(req,res){
+     res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
+}); 
 app.get("/secondpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'secondpage.html'));
 });
@@ -28,16 +31,13 @@ app.get("/fifthpage",function(req,res){
 });
 app.get("/sixpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'sixpage.html'));
-    
 });
+
 app.get("/sevenpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'sevenpage.html'));
+}); 
+
     
-});
-app.get("/contact",function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
-    
-});
 app.get("/about",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'about.html'));
     
