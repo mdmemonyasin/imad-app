@@ -61,7 +61,7 @@ app.get('/contact', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
 app.get('/Loginpage1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Loginpage1.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'LoginPage1.html'));
 });
 
 
