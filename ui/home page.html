@@ -3,10 +3,7 @@
 <head>
 	<title>Library Management System</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<link rel="stylesheet" href="profile.css">
-<link rel="stylesheet" href="footer.css">
-<style>
+	<style>
 
 body{
 	background-image:url("library3.jpg");
@@ -96,17 +93,145 @@ body{
 #search #s {
 	width: 120px;
 }
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+.mySlides{
+  display: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -50px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+
+q {font-style: italic;
+font-size:20px;}
+
+
+.author {color: black;
+font-size: 20px;}
+#ProfilePage
+{
+    margin: 50px auto;
+    width: 650px;
+border: 1px solid black;
+}
+
+#LeftCol
+{
+    float: left;
+width: 200px;
+    text-align: center;
+    margin-right: 20px;
+border: 1px solid black;
+}
+
+#Photo
+{
+background-image: url("png1.jpg");
+	background-size:cover;
+	margin:0;
+    width: 200px;
+    height: 200px;
+border: 1px solid black;
+}
+
+#PhotoOptions
+{
+    text-align: center;
+    width: 200px;
+border: 1px solid black;
+}
+
+#Info
+{
+    width: 400px;
+    text-align: center;
+    float: right;
+border: 2px solid black;
+}
+#Info strong
+{
+    display: inline-block;
+    width: 100px;
+border: 1px solid black;
+}
+
+#Info span
+{
+    display: inline-block;
+    width: 250px;
+border: 1px solid black;
+color:white;
+}
 
 </style>
+</head>
+
 <body>
 <div class="title"><h1>LMS | Library Management System</h1>
 <div class="nav">
 	<ul>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Find A Book</a></li>
+			<li><a href="http://memonyasin3.imad.hasura-app.io/newpage">Find A Book</a></li>
 			<li><a href="#">Staff Details</a></li>
 			<li><a href="#">Feedback</a></li>
-			<li><a href="#">About</a></li>
+			<li><a href="http://memonyasin3.imad.hasura-app.io/about">About</a></li>
 			<li><a href="#contact.html">Contact Us</a></li>
 </ul>
 </div>
@@ -121,9 +246,6 @@ body{
 				</fieldset>
 			</form>
 		</div>
-		
-			</li>
-		</ul>
 	</div>
 	<div id="ProfilePage">
     <div id="LeftCol">
@@ -218,6 +340,6 @@ function showSlides(n) {
 </script>
 
 </div>
-
+</div>
 </body>
 </html>
