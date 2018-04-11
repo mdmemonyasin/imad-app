@@ -34,6 +34,10 @@ app.get("/sevenpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'sevenpage.html'));
     
 });
+app.get("/contact",function(req,res){
+     res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
+    
+});
 app.get("/about",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'about.html'));
     
@@ -46,9 +50,7 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-app.get('/contact', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
-});
+
 app.get('/ui/library3.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'library3.jpg'));
 });
