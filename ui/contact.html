@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library Management System</title>
+</head>
+<style>
+body{
+	background-image:url("library3.jpg");
+	background-size:cover;
+	margin:0;
+	
+}
+.nav{
+	width:100%;
+	background:#000033;
+	height:100px;
+	margin-top:100px;
+}
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	position:absolute;
+}
+li {
+	float:left;
+	margin:25px;
+	
+}
+a {
+	width:150px;
+	color:white;
+	display:block;
+	text-decoration:none;
+	font-size:20px;
+	text-align:center;
+	padding:10px;
+	border-radius:10px;
+	font-family: Century Gothic;
+	font-weight:bold;
+	
+}
+a:hover{
+	background:#669900;
+	transition:0.6s;
+}
+
+#contact_form {  
+	padding: 20; 
+}
+
+#contact_form form { 
+	margin-top: 0px; 
+	padding: 20px; 
+}
+
+#contact_form form .input_field { 
+	width: 300px; 
+	padding: 5px; 
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf; 
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px; 
+}
+
+#contact_form form label { 
+	display: block; 
+	width: 100px; 
+	margin-right: 10px; 
+	font-size: 16px; 
+	font-family: verdana;
+	color:white;
+}
+
+#contact_form form textarea { 
+	width: 368px;  
+	height: 150px; 
+	padding: 5px; 
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf; 
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px; 
+}
+
+#contact_form form .submit_btn {
+	margin: 10px 0px;
+	padding: 5px 14px;
+	color: #444;
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf;
+	font-size: 14px;
+}
+
+
+</style>
+<body>
+<div class="nav">
+	<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Find A Book</a></li>
+			<li><a href="#">Staff Details</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+
+<div class="contactus">
+                <h1>Contact Us</h1>
+                
+              		<div id="contact_form">
+                    <form method="post" name="contact" action="#">
+                      <label for="author">Name:</label>
+                      <input type="text" maxlength="40" id="author" class="input_field" name="author" />
+                      <div class="cleaner_h10"></div>
+                      <label for="email">Email:</label>
+                      <input type="text" maxlength="40" id="email" class="input_field" name="email" />
+                      <div class="cleaner_h10"></div>
+                      <label for="subject">Subject:</label>
+                      <input type="text" maxlength="40" id="subject" class="input_field" name="subject" />
+                      <div class="cleaner_h10"></div>
+                      <label for="text">Message:</label>
+                      <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+                      <div class="cleaner_h10"></div>
+                      <input type="submit" value="Send" id="submit" name="submit" class="submit_btn float_l" />
+                      <input type="reset" value="Reset" id="reset" name="reset" class="submit_btn float_r" />
+                    </form>
+                  </div>
+                </div>
+
+</body>
+</html>
