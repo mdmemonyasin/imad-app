@@ -60,6 +60,9 @@ app.get('/ui/png1.jpg', function (req, res) {
 app.get('/contact', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
+app.get('/Loginpage1', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Loginpage1.html'));
+});
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
