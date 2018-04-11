@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library Management System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="footer.css">
+<style>
+
+body{
+	background-image:url("library3.jpg");
+	background-size:cover;
+	margin:0;
+	
+}
+.title
+{
+	text-align: center;
+	padding:0;
+	
+}
+.title h1
+{
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-size: 36px;
+	
+}
+.nav{
+	width:100%;
+	background:#000033;
+	height:100px;
+	margin-top:38px;
+}
+.nav ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	position:absolute;
+}
+.nav ul li {
+	float:left;
+	margin:25px;
+	
+}
+.nav ul li a {
+	width:150px;
+	color:white;
+	display:block;
+	text-decoration:none;
+	font-size:20px;
+	text-align:center;
+	padding:10px;
+	border-radius:10px;
+	font-family: Century Gothic;
+	font-weight:bold;
+	
+}
+.nav ul li a:hover{
+	background:#669900;
+	transition:0.6s;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 240px;
+
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}#sidebar li ul {
+	padding:0px;
+}
+#sidebar li li {
+	font-size: .85em;
+}
+
+#sidebar h2 {
+	height: 20px;
+	padding: 0px;
+}
+
+/* Search */
+
+#searchform {
+	padding: 0px;
+}
+
+#search #s {
+	width: 120px;
+}
+
+</style>
+<body>
+<div class="title"><h1>LMS | Library Management System</h1>
+<div class="nav">
+	<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Find A Book</a></li>
+			<li><a href="#">Staff Details</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#contact.html">Contact Us</a></li>
+</ul>
+</div>
+	
+	<div id="sidebar">
+		<div id="search">
+			<h2>Search</h2>
+			<form id="searchform" method="get" action="">
+				<fieldset>
+				<input type="text" name="s" id="s" size="15" value="" />
+				<input type="submit" id="x" value="Search" />
+				</fieldset>
+			</form>
+		</div>
+		
+			</li>
+		</ul>
+	</div>
+	<div id="ProfilePage">
+    <div id="LeftCol">
+        <div id="Photo"></div>
+        <div id="ProfileOptions">
+        Student Profile
+        </div>
+    </div>
+
+    <div id="Info" style="font-size:17px; " >
+        <p>
+            <strong>Name:</strong>
+            <span>Alexendre Diarardo</span>
+        </p>
+        <p>
+            <strong>Regd No.:</strong>
+            <span>11652689</span>
+        </p>
+        <p>
+            <strong>Book issued:</strong>
+            <span>5</span>
+        </p>
+        <p>
+            <strong>Last Date To Submit:</strong>
+            <span>25 April 2018</span>
+        </p>
+        <p>
+            <strong>Fine To Pay:</strong>
+            <span> &#x20B9; 85 </span>
+        </p>
+    </div>
+    <div style="clear:both"></div>
+</div>
+	
+	<div class="footer">
+	
+  <div class="slideshow-container">
+
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+
+</body>
+</html>
