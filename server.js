@@ -11,9 +11,6 @@ app.get('/', function (req, res) {
 app.get("/newpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'newpage.html'));
 }); 
-app.get("/contact",function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'ui/contact.html'));
-}); 
 app.get("/secondpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'secondpage.html'));
 });
@@ -59,6 +56,9 @@ app.get('/ui/libraryB.jpg', function (req, res) {
 });
 app.get('/ui/png1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'png1.jpg'));
+});
+app.get('/contact', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
 
 
