@@ -12,7 +12,7 @@ app.get("/newpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'newpage.html'));
 }); 
 app.get("/contact",function(req,res){
-     res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
+     res.sendFile(path.join(__dirname, 'ui', 'ui/contact.html'));
 }); 
 app.get("/secondpage",function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'secondpage.html'));
