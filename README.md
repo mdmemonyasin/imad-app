@@ -1,3 +1,5 @@
-# imad-app
+# LIBRARY MANAGEMENT SYSTEM
 
 IMAD course application.
+
+
